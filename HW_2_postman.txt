@@ -101,14 +101,21 @@ http://162.55.220.72:5005/object_info_4
 
 Задание № 5
 http://162.55.220.72:5005/user_info_2
+
 1. Вставить параметр salary из окружения в request
 2. Вставить параметр age из окружения в age
 3. Вставить параметр name из окружения в name
-4. Отправить запрос.
+{{salary}}  {{age}}  {{name}}
+
+4. Отправить запрос
 5. Статус код 200
-6. Спарсить response body в json.
-7. Спарсить request.
+6. Спарсить response body в json
+7. Спарсить request
+let resp_f = pm.response.json();
+let req_f = request.data
+
 8. Проверить, что json response имеет параметр start_qa_salary
+
 9. Проверить, что json response имеет параметр qa_salary_after_6_months
 10. Проверить, что json response имеет параметр qa_salary_after_12_months
 11. Проверить, что json response имеет параметр qa_salary_after_1.5_year
